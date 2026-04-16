@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Product Recommender | Smart Shopping</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="An AI-powered product recommendation engine for a smarter shopping experience.">
+</head>
+
+<body>
+    <header>
+        <div class="logo">AI.Store</div>
+        <div class="user-selector">
+            <span>Viewing as:</span>
+            <select id="userSelector">
+                <option value="1">User 1 (Admin)</option>
+                <option value="2">User 2 (Student)</option>
+                <option value="3">User 3 (Designer)</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Discover What You <br><span style="color:var(--primary-color)">Really</span> Need.</h1>
+        <p>Our smart algorithm analyzes your behavior to find the perfect products tailored specifically for you.</p>
+    </div>
+
+    <main>
+        <section id="recommendationsSection">
+            <div class="section-header">
+                <h2>Top Picks For You</h2>
+                <span class="badge">AI Recommended</span>
+            </div>
+            <div id="recommendationsGrid" class="product-grid">
+                <div class="loader">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="allProductsSection">
+            <div class="section-header">
+                <h2>Explore Catalog</h2>
+            </div>
+            <div id="allProductsGrid" class="product-grid">
+                <div class="loader">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
